@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Manoj Nawale</title>
+  <meta name="description" content="About Manoj Nawale — data-driven industrial engineer." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="/" class="font-semibold tracking-tight">Manoj Nawale</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a class="hover:underline" href="/projects.html">Projects</a>
+        <a class="hover:underline font-semibold" href="/about.html">About</a>
+        <a class="hover:underline" href="/resume.html">Resume</a>
+        <a class="hover:underline" href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <h1 class="text-3xl font-semibold tracking-tight">About</h1>
+
+    <div class="mt-6 grid gap-6 lg:grid-cols-12">
+      <section class="lg:col-span-8">
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-6 shadow-sm">
+          <p class="text-slate-700">
+            I’m a data-driven engineer with a Mechanical Engineering background (SPPU Pune) and an M.Sc. in Production & Operations Management (KIT).
+            I build decision support systems for industrial planning — the kind that stays reproducible, auditable, and useful under real-world mess.
+          </p>
+
+          <h2 class="mt-6 text-lg font-semibold">How I work</h2>
+          <ul class="mt-3 list-disc pl-5 text-slate-700 space-y-2">
+            <li><span class="font-semibold">Clarify the decision</span> (what changes if we’re right vs wrong?)</li>
+            <li><span class="font-semibold">Make runs reproducible</span> (inputs/outputs/versioning, no mystery)</li>
+            <li><span class="font-semibold">Explain the why</span> (sensitivity, drivers, scenarios)</li>
+            <li><span class="font-semibold">Ship</span> (clean interfaces, readable code, practical artifacts)</li>
+          </ul>
+
+          <h2 class="mt-6 text-lg font-semibold">Personal bits (short, human, not cringe)</h2>
+          <p class="mt-3 text-slate-700">
+            I like solving stubborn problems, building systems that don’t break when scaled, and keeping things simple enough to explain on a whiteboard.
+            Outside work: fitness, tinkering, and turning “that’s impossible” into “cool, watch me.”
+          </p>
+        </div>
+      </section>
+
+      <aside class="lg:col-span-4">
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-6 shadow-sm">
+          <h2 class="text-sm font-semibold">Quick facts</h2>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="text-slate-500">Focus</dt>
+              <dd class="font-semibold">Optimization • Data • Simulation</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Tools</dt>
+              <dd class="font-semibold">Python, Airflow, MinIO/S3, Gurobi, SimPy</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Industries</dt>
+              <dd class="font-semibold">Industrial engineering, supply chain</dd>
+            </div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200/70 bg-white/60">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600">
+      © <span id="y"></span> Manoj Nawale.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
