@@ -2,45 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Manoj Nawale — Portfolio</title>
-  <meta name="description" content="Data-driven Industrial Engineer! Data Analytics, Optimization, Data Engineering, Simulation." />
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 48px 18px; line-height: 1.5; }
-    .wrap { max-width: 860px; margin: 0 auto; }
-    .badge { display: inline-block; padding: 6px 10px; border: 1px solid #ddd; border-radius: 999px; margin: 6px 8px 0 0; font-size: 14px; }
-    .card { border: 1px solid #eee; border-radius: 14px; padding: 18px; margin-top: 18px; }
-    a { color: inherit; }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manoj Nawale — Data-Driven Industrial Engineer</title>
+  <meta name="description" content="Scenario-driven optimization, reproducible data pipelines, and simulation for industrial planning." />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main class="wrap">
-    <h1>Manoj Nawale</h1>
-    <p>
-      Data-driven Industrial Engineer (M.Sc. KIT). I build scenario-driven decision support systems
-      with optimization, reproducible data pipelines, and simulation.
-      <strong>Gets it done</strong> — even when the problem fights back.
-    </p>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="/" class="font-semibold tracking-tight">Manoj Nawale</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a class="hover:underline" href="/projects.html">Projects</a>
+        <a class="hover:underline" href="/about.html">About</a>
+        <a class="hover:underline" href="/resume.html">Resume</a>
+        <a class="hover:underline" href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <div>
-      <span class="badge">Airflow</span>
-      <span class="badge">MinIO / S3</span>
-      <span class="badge">Python</span>
-      <span class="badge">SQL</span>
-      <span class="badge">MILP (Gurobi)</span>
-      <span class="badge">SimPy</span>
-      <span class="badge">Analytics</span>
-    </div>
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="pt-14 pb-10">
+      <div class="max-w-3xl">
+        <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-sm">
+          <span class="font-semibold">Open to roles</span>
+          <span class="text-slate-600">Data • OR • Supply Chain</span>
+        </p>
+        <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+          Data-driven Industrial Engineer building decision support systems that <span class="underline decoration-slate-300">ship</span>.
+        </h1>
+        <p class="mt-4 text-lg text-slate-700">
+          M.Sc. Production & Operations Management (KIT). I build scenario-driven optimization,
+          reproducible data pipelines (Airflow + S3/MinIO), and simulation (SimPy) to turn messy planning
+          into auditable decisions. When the problem gets ugly, I get calm.
+        </p>
 
-    <div class="card">
-      <h2>Portfolio is under construction 🚧</h2>
-      <p>
-        If you can see this page, GitHub Pages is working. Next: full interactive site + project showcase.
-      </p>
-      <p>
-        GitHub: <a href="https://github.com/manoj-nawale">github.com/manoj-nawale</a>
-      </p>
-    </div>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/projects.html" class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800">
+            View Projects
+          </a>
+          <a href="/resume.html" class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+            Download Resume
+          </a>
+          <a href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer"
+             class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+             class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-14">
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+          <p class="text-xs font-semibold text-slate-500">Core Strength</p>
+          <p class="mt-2 font-semibold">ScenarioOps + Reproducibility</p>
+          <p class="mt-2 text-sm text-slate-700">Optimization runs as traceable artifacts, not ad-hoc scripts.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+          <p class="text-xs font-semibold text-slate-500">Core Strength</p>
+          <p class="mt-2 font-semibold">MILP (Gurobi) + Explainability</p>
+          <p class="mt-2 text-sm text-slate-700">Sensitivity → drivers → scenarios → decisions.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+          <p class="text-xs font-semibold text-slate-500">Core Strength</p>
+          <p class="mt-2 font-semibold">Data Engineering</p>
+          <p class="mt-2 text-sm text-slate-700">Airflow orchestration, storage layouts, clean interfaces.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white/70 p-5">
+          <p class="text-xs font-semibold text-slate-500">Core Strength</p>
+          <p class="mt-2 font-semibold">Simulation (SimPy)</p>
+          <p class="mt-2 text-sm text-slate-700">WIP, utilization, bottlenecks, capacity planning KPIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-16">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-semibold tracking-tight">Featured work</h2>
+          <p class="mt-2 text-slate-700">A few projects that show how I think — and how I execute.</p>
+        </div>
+        <a href="/projects.html" class="text-sm font-semibold hover:underline">See all →</a>
+      </div>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <a href="/projects/scenarioops-network-optimizer.html"
+           class="group rounded-2xl border border-slate-200 bg-white/70 p-6 hover:bg-white transition">
+          <p class="text-xs font-semibold text-slate-500">Flagship</p>
+          <h3 class="mt-2 text-lg font-semibold">ScenarioOps + Network Optimizer</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            Airflow + MinIO pipeline where each run is immutable, comparable, and audit-friendly.
+          </p>
+          <p class="mt-4 text-sm font-semibold">Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span></p>
+        </a>
+
+        <a href="/projects/milp-sensitivity-analysis.html"
+           class="group rounded-2xl border border-slate-200 bg-white/70 p-6 hover:bg-white transition">
+          <p class="text-xs font-semibold text-slate-500">Explainability</p>
+          <h3 class="mt-2 text-lg font-semibold">Sensitivity Analysis for MILP</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            Identify key cost/capacity drivers and convert them into scenario knobs.
+          </p>
+          <p class="mt-4 text-sm font-semibold">Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span></p>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="border-t border-slate-200/70 bg-white/60">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="y"></span> Manoj Nawale. Built on GitHub Pages.</p>
+        <div class="flex gap-4">
+          <a class="hover:underline" href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="hover:underline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
