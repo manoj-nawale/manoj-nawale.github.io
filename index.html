@@ -7,6 +7,7 @@
   <meta name="description" content="Scenario-driven optimization, reproducible data pipelines, and simulation for industrial planning." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
   <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
@@ -21,36 +22,66 @@
   </header>
 
   <main class="mx-auto max-w-6xl px-4">
+    <!-- HERO (now 2-column with image) -->
     <section class="pt-14 pb-10">
-      <div class="max-w-3xl">
-        <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-sm">
-          <span class="font-semibold">Open to roles</span>
-          <span class="text-slate-600">Data • OR • Supply Chain</span>
-        </p>
-        <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Data-driven Industrial Engineer building decision support systems that <span class="underline decoration-slate-300">ship</span>.
-        </h1>
-        <p class="mt-4 text-lg text-slate-700">
-          M.Sc. Production & Operations Management (KIT). I build scenario-driven optimization,
-          reproducible data pipelines (Airflow + S3/MinIO), and simulation (SimPy) to turn messy planning
-          into auditable decisions. When the problem gets ugly, I get calm.
-        </p>
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+        <!-- Left: text -->
+        <div class="lg:col-span-7">
+          <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-sm">
+            <span class="font-semibold">Open to roles</span>
+            <span class="text-slate-600">Data • OR • Supply Chain</span>
+          </p>
 
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/projects.html" class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800">
-            View Projects
-          </a>
-          <a href="/resume.html" class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
-            Download Resume
-          </a>
-          <a href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer"
-             class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
-             class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
-            LinkedIn
-          </a>
+          <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+            Data-driven Industrial Engineer building decision support systems that
+            <span class="underline decoration-slate-300">ship</span>.
+          </h1>
+
+          <p class="mt-4 text-lg text-slate-700">
+            M.Sc. Production & Operations Management (KIT). I build scenario-driven optimization,
+            reproducible data pipelines (Airflow + S3/MinIO), and simulation (SimPy) to turn messy planning
+            into auditable decisions. When the problem gets ugly, I get calm.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="/projects.html"
+               class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800">
+              View Projects
+            </a>
+
+            <a href="/resume.html"
+               class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+              Download Resume
+            </a>
+
+            <a href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer"
+               class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+              GitHub
+            </a>
+
+            <!-- Replace with your real LinkedIn -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+               class="rounded-xl border border-slate-200 bg-white/70 px-5 py-3 text-sm font-semibold hover:bg-white">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: image -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl border border-slate-200 bg-white/70 p-3 shadow-sm">
+            <!-- Put your photo at: /assets/img/manoj.jpg -->
+            <img
+              src="/assets/img/manoj.jpg"
+              alt="Manoj Nawale"
+              class="h-[380px] w-full rounded-2xl object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <p class="mt-3 text-xs text-slate-500">
+            Karlsruhe, Germany • Optimization • Data Engineering • Simulation
+          </p>
         </div>
       </div>
     </section>
@@ -97,7 +128,9 @@
           <p class="mt-2 text-sm text-slate-700">
             Airflow + MinIO pipeline where each run is immutable, comparable, and audit-friendly.
           </p>
-          <p class="mt-4 text-sm font-semibold">Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span></p>
+          <p class="mt-4 text-sm font-semibold">
+            Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span>
+          </p>
         </a>
 
         <a href="/projects/milp-sensitivity-analysis.html"
@@ -107,7 +140,9 @@
           <p class="mt-2 text-sm text-slate-700">
             Identify key cost/capacity drivers and convert them into scenario knobs.
           </p>
-          <p class="mt-4 text-sm font-semibold">Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span></p>
+          <p class="mt-4 text-sm font-semibold">
+            Read case study <span class="group-hover:translate-x-0.5 inline-block transition">→</span>
+          </p>
         </a>
       </div>
     </section>
@@ -119,6 +154,7 @@
         <p>© <span id="y"></span> Manoj Nawale. Built on GitHub Pages.</p>
         <div class="flex gap-4">
           <a class="hover:underline" href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Replace with your real LinkedIn -->
           <a class="hover:underline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
