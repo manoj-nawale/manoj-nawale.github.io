@@ -55,16 +55,18 @@
       "id": "simpy",
       "title": "Discrete-Event Simulation of Production Flow (SimPy)",
       "category": "Simulation • Operations Analytics",
-      "tagline": "Simulate a production process and compute WIP, utilization, bottlenecks, and capacity planning KPIs.",
+      "tagline": "Digital twin of a circular production line (forward + reverse flow) with KPI exports and a Dash dashboard for bottleneck/cost/sustainability analysis.",
       "status": "Shipped",
       "url": "/projects/simpy-discrete-event-sim.html",
-      "github": "https://github.com/manoj-nawale",
+      "github": "https://github.com/m-nawale/lernfabrik-simulation",
       "roles": ["Data Analyst", "Industrial Engineer"],
       "skills": ["Discrete-Event Simulation", "Bottleneck Analysis", "KPI Design", "Capacity Planning"],
       "tools": ["Python", "SimPy"],
       "highlights": [
         "End-to-end model: arrivals, processing, queues, resources.",
         "Derived KPIs for decision-making (utilization/WIP/throughput).",
+        "Config-driven scenarios (downtime / returns / capacity relief).",
+        "Run artifacts saved per run + Dash dashboard explorer.",
         "Used insights to guide improvement and planning."
       ]
     }
