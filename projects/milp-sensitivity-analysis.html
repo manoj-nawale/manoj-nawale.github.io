@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sensitivity Analysis for MILP — Work in Progress — Manoj Nawale</title>
+  <meta name="description" content="Work in progress page for Sensitivity Analysis for MILP project." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="/" class="font-semibold tracking-tight">Manoj Nawale</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a class="hover:underline font-semibold" href="/projects.html">Projects</a>
+        <a class="hover:underline" href="/about.html">About</a>
+        <a class="hover:underline" href="/resume.html">Resume</a>
+        <a class="hover:underline" href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-4 py-10">
+    <article class="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm sm:p-8">
+      <p class="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900">In progress</p>
+      <h1 class="mt-4 text-3xl font-semibold tracking-tight">Sensitivity Analysis for MILP (Optuna / SALib / SHAP)</h1>
+      <p class="mt-4 text-slate-700">
+        This case study is currently being built. I’m finalizing experiments and writing up results so the page can include
+        reproducible methodology, KPI impact interpretation, and decision-oriented scenario recommendations.
+      </p>
+
+      <div class="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+        <p class="font-semibold">Planned update includes:</p>
+        <ul class="mt-2 list-disc pl-5 space-y-1">
+          <li>Global sensitivity setup and experiment design</li>
+          <li>Feature-importance interpretation for MILP KPIs</li>
+          <li>How sensitivity insights map into scenario knobs</li>
+        </ul>
+      </div>
+
+      <figure class="mt-8">
+        <img class="mx-auto w-full max-w-md rounded-xl border border-slate-200" src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Work in progress funny gif" />
+        <figcaption class="mt-2 text-center text-sm text-slate-500">Model is cooking. Results are marinating. 🍳</figcaption>
+      </figure>
+
+      <p class="mt-8 text-sm text-slate-600">
+        Meanwhile, check out the shipped flagship:
+        <a class="font-semibold underline underline-offset-4" href="/projects/scenario-planning-mvp.html">Scenario Planning MVP</a>.
+      </p>
+    </article>
+  </main>
+
+  <footer class="border-t border-slate-200/70 bg-white/60">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="y"></span> Manoj Nawale.</p>
+        <div class="flex gap-4">
+          <a class="hover:underline" href="https://github.com/manoj-nawale" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="hover:underline" href="https://www.linkedin.com/in/mnawale" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
