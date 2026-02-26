@@ -34,7 +34,7 @@
                      {
                          "id":  "milp-sens",
                          "title":  "Sensitivity Analysis for MILP (Optuna / SALib / SHAP)",
-                         "category":  "Optimization Explainability â€¢ Analytics",
+                         "category":  "Optimization Explainability • Analytics",
                          "tagline":  "Rank drivers of objective/KPIs, then convert insights into scenario knobs for planning decisions.",
                          "status":  "In progress",
                          "url":  "/projects/milp-sensitivity-analysis.html",
@@ -62,7 +62,7 @@
                      {
                          "id":  "network-milp",
                          "title":  "Production Network Configuration (MILP with Gurobi)",
-                         "category":  "Industrial Engineering â€¢ Optimization",
+                         "category":  "Industrial Engineering • Optimization",
                          "tagline":  "Capability + capacity planning and investment decisions for production networks under constraints.",
                          "status":  "Shipped",
                          "url":  "/projects/production-network-milp.html",
@@ -82,7 +82,7 @@
                                        "Gurobi"
                                    ],
                          "highlights":  [
-                                            "Structured sets/parameters â†’ solve â†’ export results and KPIs.",
+                                            "Structured sets/parameters → solve → export results and KPIs.",
                                             "Focus on robust input checks and traceable outputs.",
                                             "Designed to evolve into scenario comparison and dashboards."
                                         ]
@@ -90,7 +90,7 @@
                      {
                          "id":  "simpy",
                          "title":  "Discrete-Event Simulation of Production Flow (SimPy)",
-                         "category":  "Simulation â€¢ Operations Analytics",
+                         "category":  "Simulation • Operations Analytics",
                          "tagline":  "Digital twin of a circular production line (forward + reverse flow) with KPI exports and a Dash dashboard for bottleneck/cost/sustainability analysis.",
                          "status":  "Shipped",
                          "url":  "/projects/simpy-discrete-event-sim.html",
