@@ -1,121 +1,121 @@
 ﻿{
-    "projects":  [
-                     {
-                         "id":  "scenario-planning-mvp",
-                         "title":  "Scenario Planning MVP (Airflow + MinIO)",
-                         "category":  "Decision Support System • Data Engineering",
-                         "tagline":  "Reproducible what-if scenario planning pipeline: deterministic baseline -\u003e scenario knobs -\u003e solver outputs with auditable run artifacts.",
-                         "status":  "Flagship",
-                         "url":  "/projects/scenario-planning-mvp.html",
-                         "github":  "https://github.com/manoj-nawale/scenario-planning-mvp",
-                         "roles":  [
-                                       "Data Engineer",
-                                       "Operations Research Analyst",
-                                       "Supply Chain Analyst"
-                                   ],
-                         "skills":  [
-                                        "Airflow",
-                                        "MinIO/S3",
-                                        "Postgres",
-                                        "Reproducibility",
-                                        "Scenario Analysis",
-                                        "Artifact Versioning"
-                                    ],
-                         "tools":  [
-                                       "Python",
-                                       "Docker Compose"
-                                   ],
-                         "highlights":  [
-                                            "Run-partitioned artifacts in MinIO: runs/dt=.../run_id=.../scenario_id=...",
-                                            "Three scenario knobs implemented: demand, variable cost, logistics cost scaling.",
-                                            "Published outputs include fact_production, kpi_total, kpi_cost_breakdown, plus run metadata."
-                                        ]
-                     },
-                     {
-                         "id":  "milp-sens",
-                         "title":  "Sensitivity Analysis for MILP (Optuna / SALib / SHAP)",
-                         "category":  "Optimization Explainability • Analytics",
-                         "tagline":  "Work in progress: sensitivity workflow for MILP to rank KPI drivers and convert findings into actionable scenario knobs.",
-                         "status":  "In progress",
-                         "url":  "/projects/milp-sensitivity-analysis.html",
-                         "github":  "https://github.com/manoj-nawale",
-                         "roles":  [
-                                       "Data Scientist",
-                                       "Operations Research Analyst"
-                                   ],
-                         "skills":  [
-                                        "Sensitivity Analysis",
-                                        "Experiment Design",
-                                        "Explainability",
-                                        "Scenario Design"
-                                    ],
-                         "tools":  [
-                                       "Python",
-                                       "Gurobi"
-                                   ],
-                         "highlights":  [
-                                            "Global sensitivity workflow for MILP using sampling + surrogate models.",
-                                            "Feature importance to identify cost/capacity drivers affecting KPIs.",
-                                            "Turns analysis into actionable scenarios (e.g., demand up triggers overtime)."
-                                        ]
-                     },
-                     {
-                         "id":  "network-milp",
-                         "title":  "Production Network Configuration (MILP with Gurobi)",
-                         "category":  "Industrial Engineering • Optimization",
-                         "tagline":  "Work in progress: MILP model for production network capability/capacity and investment planning under constraints.",
-                         "status":  "In progress",
-                         "url":  "/projects/production-network-milp.html",
-                         "github":  "https://github.com/manoj-nawale",
-                         "roles":  [
-                                       "Operations Research Analyst",
-                                       "Production Planner"
-                                   ],
-                         "skills":  [
-                                        "MILP Modeling",
-                                        "Capacity Planning",
-                                        "Investment Planning",
-                                        "Prechecks / Validation"
-                                    ],
-                         "tools":  [
-                                       "Python",
-                                       "Gurobi"
-                                   ],
-                         "highlights":  [
-                                            "Structured sets/parameters → solve → export results and KPIs.",
-                                            "Focus on robust input checks and traceable outputs.",
-                                            "Designed to evolve into scenario comparison and dashboards."
-                                        ]
-                     },
-                     {
-                         "id":  "simpy",
-                         "title":  "Discrete-Event Simulation of Production Flow (SimPy)",
-                         "category":  "Simulation • Operations Analytics",
-                         "tagline":  "Digital twin of a circular production line (forward + reverse flow) with KPI exports and a Dash dashboard for bottleneck/cost/sustainability analysis.",
-                         "status":  "Shipped",
-                         "url":  "/projects/simpy-discrete-event-sim.html",
-                         "github":  "https://github.com/m-nawale/lernfabrik-simulation",
-                         "roles":  [
-                                       "Data Analyst",
-                                       "Industrial Engineer"
-                                   ],
-                         "skills":  [
-                                        "Discrete-Event Simulation",
-                                        "Bottleneck Analysis",
-                                        "KPI Design",
-                                        "Capacity Planning"
-                                    ],
-                         "tools":  [
-                                       "Python",
-                                       "SimPy"
-                                   ],
-                         "highlights":  [
-                                            "End-to-end model: arrivals, processing, queues, resources.",
-                                            "Derived KPIs for decision-making (utilization/WIP/throughput).",
-                                            "Config-driven scenarios (downtime / returns / capacity relief).",
-                                            "Run artifacts saved per run + Dash dashboard explorer.",
-                                            "Used insights to guide improvement and planning."
-                                        ]
-                     }
-                 ]
+    "projects": [
+        {
+            "id": "scenario-planning-mvp",
+            "title": "Scenario Planning MVP (Airflow + MinIO)",
+            "category": "Decision Support System • Data Engineering",
+            "tagline": "Reproducible what-if scenario planning pipeline: deterministic baseline -\u003e scenario knobs -\u003e solver outputs with auditable run artifacts.",
+            "status": "Flagship",
+            "url": "/projects/scenario-planning-mvp.html",
+            "github": "https://github.com/manoj-nawale/scenario-planning-mvp",
+            "roles": [
+                "Data Engineer",
+                "Operations Research Analyst",
+                "Supply Chain Analyst"
+            ],
+            "skills": [
+                "Airflow",
+                "MinIO/S3",
+                "Postgres",
+                "Reproducibility",
+                "Scenario Analysis",
+                "Artifact Versioning"
+            ],
+            "tools": [
+                "Python",
+                "Docker Compose"
+            ],
+            "highlights": [
+                "Run-partitioned artifacts in MinIO: runs/dt=.../run_id=.../scenario_id=...",
+                "Three scenario knobs implemented: demand, variable cost, logistics cost scaling.",
+                "Published outputs include fact_production, kpi_total, kpi_cost_breakdown, plus run metadata."
+            ]
+        },
+        {
+            "id": "simpy",
+            "title": "Discrete-Event Simulation of Production Flow (SimPy)",
+            "category": "Simulation • Operations Analytics",
+            "tagline": "Digital twin of a circular production line (forward + reverse flow) with KPI exports and a Dash dashboard for bottleneck/cost/sustainability analysis.",
+            "status": "Shipped",
+            "url": "/projects/simpy-discrete-event-sim.html",
+            "github": "https://github.com/m-nawale/lernfabrik-simulation",
+            "roles": [
+                "Data Analyst",
+                "Industrial Engineer"
+            ],
+            "skills": [
+                "Discrete-Event Simulation",
+                "Bottleneck Analysis",
+                "KPI Design",
+                "Capacity Planning"
+            ],
+            "tools": [
+                "Python",
+                "SimPy"
+            ],
+            "highlights": [
+                "End-to-end model: arrivals, processing, queues, resources.",
+                "Derived KPIs for decision-making (utilization/WIP/throughput).",
+                "Config-driven scenarios (downtime / returns / capacity relief).",
+                "Run artifacts saved per run + Dash dashboard explorer.",
+                "Used insights to guide improvement and planning."
+            ]
+        },
+        {
+            "id": "milp-sens",
+            "title": "Sensitivity Analysis for MILP (Optuna / SALib / SHAP)",
+            "category": "Optimization Explainability • Analytics",
+            "tagline": "Work in progress: sensitivity workflow for MILP to rank KPI drivers and convert findings into actionable scenario knobs.",
+            "status": "In progress",
+            "url": "/projects/milp-sensitivity-analysis.html",
+            "github": "https://github.com/manoj-nawale",
+            "roles": [
+                "Data Scientist",
+                "Operations Research Analyst"
+            ],
+            "skills": [
+                "Sensitivity Analysis",
+                "Experiment Design",
+                "Explainability",
+                "Scenario Design"
+            ],
+            "tools": [
+                "Python",
+                "Gurobi"
+            ],
+            "highlights": [
+                "Global sensitivity workflow for MILP using sampling + surrogate models.",
+                "Feature importance to identify cost/capacity drivers affecting KPIs.",
+                "Turns analysis into actionable scenarios (e.g., demand up triggers overtime)."
+            ]
+        },
+        {
+            "id": "network-milp",
+            "title": "Production Network Configuration (MILP with Gurobi)",
+            "category": "Industrial Engineering • Optimization",
+            "tagline": "Work in progress: MILP model for production network capability/capacity and investment planning under constraints.",
+            "status": "In progress",
+            "url": "/projects/production-network-milp.html",
+            "github": "https://github.com/manoj-nawale",
+            "roles": [
+                "Operations Research Analyst",
+                "Production Planner"
+            ],
+            "skills": [
+                "MILP Modeling",
+                "Capacity Planning",
+                "Investment Planning",
+                "Prechecks / Validation"
+            ],
+            "tools": [
+                "Python",
+                "Gurobi"
+            ],
+            "highlights": [
+                "Structured sets/parameters → solve → export results and KPIs.",
+                "Focus on robust input checks and traceable outputs.",
+                "Designed to evolve into scenario comparison and dashboards."
+            ]
+        }
+    ]
 }
